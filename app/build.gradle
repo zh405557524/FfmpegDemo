@@ -16,6 +16,13 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags ""
+                // 编译自己的so库支持的架构
+                abiFilters 'armeabi-v7a'
+            }
+
+            ndk {
+                // 最终输出的apk中，将会包含选择的ABI
+                abiFilters 'armeabi-v7a'
             }
         }
     }

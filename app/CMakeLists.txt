@@ -26,6 +26,15 @@ add_library( # Sets the name of the library.
              # Provides a relative path to your source file(s).
              src/main/cpp/native-lib.cpp )
 
+add_library( # Sets the name of the library.
+             Player
+
+             # Sets the library as a shared library.
+             SHARED
+
+             # Provides a relative path to your source file(s).
+              src/main/jni/player.c )
+
 
 
 set(LIB_DIR ${CMAKE_SOURCE_DIR}/src/main/jniLibs)

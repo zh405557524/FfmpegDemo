@@ -267,10 +267,10 @@
  
     
     
-    
-    
-    
-    
+### 3 编译
+    1 java类中创建native方法
+    2 在编译后的文件 在debug 目录下使用
+            javah -jni -encoding UTF-8 com.xxx.xx.xxx
     
     
     
